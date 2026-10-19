@@ -10,7 +10,7 @@ jobs:
       - uses: actions/setup-java@v4
         with: { distribution: temurin, java-version: 17 }
       - name: Unzip project
-        run: unzip -q Elva.zip
+        run: Unzip -o -q Elva-v2.zip
       - name: Accept Android licenses
         continue-on-error: true
         run: yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses
